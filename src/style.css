@@ -1,0 +1,22 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap');
+
+:root {
+	--ds-color-1-hex: #202225;				/*  Darkest	*/
+	--ds-color-1-rgb: rgb(32, 34, 37);		/*  Darkest	*/
+	--ds-color-2-hex: #292b2f;				/*  Dark	*/
+	--ds-color-2-rgb: rgb(41, 43, 47);		/*  Dark	*/
+	--ds-color-3-hex: #2f3136;				/*  Medium	*/
+	--ds-color-3-rgb: rgb(47, 49, 54);		/*  Medium	*/
+	--ds-color-4-hex: #36393f;				/*  Regular */
+	--ds-color-4-rgb: rgb(54, 57, 63);		/*  Regular	*/
+	--ds-color-5-hex: #40444b;				/*  Light	*/
+	--ds-color-5-rgb: rgb(64, 68, 75);		/*  Light	*/
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	background: var(--ds-color-4-hex);
+}
