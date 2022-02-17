@@ -8,6 +8,7 @@
 	--ds-color-3-hex: #2f3136;				/*  Medium	*/
 	--ds-color-4-hex: #36393f;				/*  Regular */
 	--ds-color-5-hex: #40444b;				/*  Light	*/
+	--ds-blurple-hex: #5865F2 ;
 
 	--a-hover-color-1: #356ff7;
 	--a-hover-color-2: #804ad6;
@@ -34,7 +35,7 @@ body {
 	color: aliceblue;
 	font-family: "Montserrat";
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 a {
@@ -43,32 +44,33 @@ a {
 }
 
 .header {
-	height: 64px;
-	background-color: var(--ds-color-1-hex);
-	line-height: 64px;
+	height: 4rem;
+	line-height: 4rem;
+	
+	padding: 0 17.5%;
+	max-width: 78rem;
+	margin: 0 auto;
 }
 
 .header a {
 	color: aliceblue;
 	text-decoration: none;
-
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
 
-.navbar {
-	display: block;
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
 .navbar li {
 	display: inline;
-	padding: 10px
+
+	margin: 0 0.25rem;
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.375rem;
+
+	transition-duration: 0.3s;
 }
 
-.navbar li a:hover {
-	color: var(--a-hover-color-2);
+.navbar li:hover {
+	background-color: rgba(255, 255, 255, 0.15);
 }
 
 .nav {
@@ -79,36 +81,87 @@ a {
 	float: left;
 
 	font-weight: 900;
-	font-size: 20px;
+	font-size: 1.3rem;
+
+	padding-right: 0.75rem;
 }
 
-.nav-logo a:hover {
+.nav-logo:hover, a.nav-logo:hover {
 	color: aliceblue;
+	cursor: default;
+	pointer-events: default;
+	
 }
 
 .main {
-	max-width: 1500px;
+	max-width: 120rem;
 	margin: 0 auto;
 }
 
 .home {
-	width: 1000px;
-	margin: 50px auto;
+	padding: 10rem 17.5% 12rem 17.5%;
+	margin: 3rem auto;
+}
+
+.home h1 {
+	font-weight: 900;
+	font-size: 3.75rem;
+	line-height: 3.5rem;
+	padding-bottom: 1rem;
+}
+
+.home .greeting {
+	font-size: 2.5rem;
+	font-weight: 900;
+	line-height: 5rem;
+	letter-spacing: 0.05rem;
+
+	border-radius: 0.375rem;
+	background-color: var(--ds-blurple-hex);
+
+	padding: 0.2rem 0.7rem 0.2rem 0.5rem;
+	margin-bottom: 5rem;
+}
+
+.home .mention {
+	font-style: italic;
+}
+
+.home p {
+	font-weight: 400;
+	font-size: 1.25rem;
+}
+
+.home .cv {
+	border-radius: 0.375rem;
+	padding: 1rem;
+	margin-top: 2rem;
+
+	color: aliceblue;
+	font-weight: 700;
+	background-color: var(--a-hover-color-1);
+}
+
+.home img {
+	float: right;
+	width: 60%;
+	transform-origin: 0% 100%;
+	transform: scale(1.3, 1.3);
 }
 
 .about, .projects, .skills, .contact {
-	width: 1500px;
-	margin: 50px auto;
+	padding: 0 10%;
+	margin: 3rem auto;
 }
 
 .footer {
-	background-color: var(--ds-color-2-hex);
-	padding: 10px 0;
+	/* background-color: var(--ds-color-2-hex); */
+	padding: 0.6rem 0;
 }
 
 .footer p {
 	text-align: center;
 	font-weight: 200;
-	font-size: 12px;
-	letter-spacing: 0.05em;
+	font-size: 0.8rem;
+	letter-spacing: 0.05rem;
 }
