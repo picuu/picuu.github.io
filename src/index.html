@@ -15,8 +15,6 @@
 
 <body>
 
-    <span id="home"></span>
-
     <!-- Navigation -->
     <header class="header">
 
@@ -35,6 +33,7 @@
 
     <main class="main">
         
+        <div class="home-bg">
         <section class="home">
 
             <img src="assets/dev-photo-o40.png" alt="dev-photo">
@@ -54,15 +53,55 @@
             </div>
 
         </section>
+        </div>
 
         <section id="about" class="about">
 
             <h2 class="title-two">About me</h2>
 
-            <p class="text">
-                My name is Carlos Capó, I'm 16 years old, and I live in Spain.<br>
-                I am training in a medium degree in computer science (microcomputer systems and networks).
-            </p>
+            <div class="grid-columns" >
+
+                <div class="grid-columns-item">
+                    <div class="paragraph">
+                        <h3 class="title-three columns-title">Who I am</h3>
+
+                        <p class="text">
+                            My name is Carlos Capó, I'm 16 years old, and I live in Spain.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent porta ullamcorper orci, commodo hendrerit sapien rutrum vitae.
+                            Etiam nec enim sit amet felis faucibus imperdiet nec nec nisi.
+                            Vestibulum efficitur augue neque, in tristique nibh imperdiet vitae.
+                            Aenean in lorem ac ex ornare lobortis.
+                            Mauris sodales vitae purus eu congue.
+                            Nunc bibendum nunc eu faucibus scelerisque.
+                            Suspendisse vel velit nec massa sodales lobortis.
+                            Vestibulum risus lacus, tempus a efficitur sit amet, vehicula in odio.
+                        </p>
+                    </div>
+
+                    <div class="paragraph">
+                        <h3 class="title-three columns-title title-margin">What I do</h3>
+
+                        <p class="text">
+                            I am training in a medium degree in computer science (microcomputer systems and networks).
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent porta ullamcorper orci, commodo hendrerit sapien rutrum vitae.
+                            Etiam nec enim sit amet felis faucibus imperdiet nec nec nisi.
+                            Vestibulum efficitur augue neque, in tristique nibh imperdiet vitae.
+                            Aenean in lorem ac ex ornare lobortis.
+                            Mauris sodales vitae purus eu congue.
+                            Nunc bibendum nunc eu faucibus scelerisque.
+                            Suspendisse vel velit nec massa sodales lobortis.
+                            Vestibulum risus lacus, tempus a efficitur sit amet, vehicula in odio.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid-columns-item">
+                    <img src="assets/picu-01.png" alt="Picu photo"> 
+                </div>
+
+            </div>
 
         </section>
 
@@ -70,32 +109,56 @@
 
             <h2 class="title-two">Projects</h2>
 
-            <p class="text">
+            <!-- <p class="text">
                 These are some of the projects I've made since I started programming.
-            </p>
+            </p> -->
 
-            <div>
+            <div class="projects-list">
                 <article>
 
-                    <h3>Project 1</h3>
+                    <img src="assets/project-example.png" alt="project1" width="250">
 
-                    <p>
+                    <h3 class="title-three">Project 1</h3>
+
+                    <p class="text">
                         Short description of the project, with keywords and specific information.
                     </p>
-
-                    <img src="assets/project-example.png" alt="project1" width="250">
 
                 </article>
 
                 <article>
 
-                    <h3>Project 2</h3>
+                    <img src="assets/project-example.png" alt="project1" width="250">
 
-                    <p>
+                    <h3 class="title-three">Project 2</h3>
+
+                    <p class="text">
                         Short description of the project, with keywords and specific information.
                     </p>
 
+                </article>
+
+                <article>
+
                     <img src="assets/project-example.png" alt="project1" width="250">
+
+                    <h3 class="title-three">Project 3</h3>
+
+                    <p class="text">
+                        Short description of the project, with keywords and specific information.
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <img src="assets/project-example.png" alt="project1" width="250">
+
+                    <h3 class="title-three">Project 4</h3>
+
+                    <p class="text">
+                        Short description of the project, with keywords and specific information.
+                    </p>
 
                 </article>
             </div>
@@ -113,7 +176,7 @@
             <div>
                 <section>
 
-                    <h3>Programming Languages</h3>
+                    <h3 class="title-three">Programming Languages</h3>
 
                     <ul>
                         <li>Python</li>
@@ -125,7 +188,7 @@
 
                 <section>
 
-                    <h3>Frontend Development</h3>
+                    <h3 class="title-three">Frontend Development</h3>
 
                     <ul>
                         <li>HTML</li>
@@ -136,7 +199,7 @@
 
                 <section>
 
-                    <h3>Framework</h3>
+                    <h3 class="title-three">Framework</h3>
 
                     <ul>
                         <li>NodeJS</li>
@@ -146,7 +209,7 @@
 
                 <section>
 
-                    <h3>Databases & Cloud Hosting</h3>
+                    <h3 class="title-three">Databases & Cloud Hosting</h3>
 
                     <ul>
                         <li>MongoDB</li>
@@ -158,7 +221,7 @@
 
                 <section>
 
-                    <h3>Graphic Design & Visual Effects</h3>
+                    <h3 class="title-three">Graphic Design & Visual Effects</h3>
 
                     <ul>
                         <li>Adobe Phtoshop</li>
