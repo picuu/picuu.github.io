@@ -7,9 +7,17 @@
 
     <title>Picu Portfolio</title>
 
+    <!---------- FAV ICON ---------->
     <link rel="icon" type="image/vnd.microsoft.icon" href="assets/favicon.svg">
 
+    <!---------- GENERAL CSS ---------->
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!---------- GENERAL JS ---------->
+    <script src="index.js" async></script>
+
+    <!---------- SCRIPTS ---------->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
@@ -119,10 +127,38 @@
 
                     <h3 class="title-three">Programming Languages</h3>
                     
-                    <ul>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
+                    <ul class="skills-list">
+
+                        <li class="skills__item w-65 margin-r">
+                            <div class="item__text">
+                                <span>Python</span>
+                                <span class="w-65">65%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-65"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-75 margin-l">
+                            <div class="item__text">
+                                <span>JavaScript</span>
+                                <span class="w-75">75%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-75"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-20 margin-r">
+                            <div class="item__text">
+                                <span>PHP</span>
+                                <span class="w-20">20%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-20"></div>
+                            </div>
+                        </li>
+
                     </ul>
                     
                 </section>
@@ -131,9 +167,28 @@
 
                     <h3 class="title-three">Frontend Development</h3>
 
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
+                    <ul class="skills-list">
+
+                        <li class="skills__item w-75 margin-r">
+                            <div class="item__text">
+                                <span>HTML</span>
+                                <span class="w-75">75%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-75"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-60 margin-l">
+                            <div class="item__text">
+                                <span>CSS</span>
+                                <span class="w-60">60%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-60"></div>
+                            </div>
+                        </li>
+
                     </ul>
                     
                 </section>
@@ -141,9 +196,19 @@
                 <section>
                     
                     <h3 class="title-three">Framework</h3>
-                    
-                    <ul>
-                        <li>NodeJS</li>
+
+                    <ul class="skills-list">
+
+                        <li class="skills__item w-75 margin-r">
+                            <div class="item__text">
+                                <span>NodeJS</span>
+                                <span class="w-75">75%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-75"></div>
+                            </div>
+                        </li>
+
                     </ul>
 
                 </section>
@@ -152,10 +217,38 @@
                     
                     <h3 class="title-three">Databases & Cloud Hosting</h3>
                     
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>GitHub</li>
-                        <li>Heroku</li>
+                    <ul class="skills-list">
+
+                        <li class="skills__item w-40 margin-r">
+                            <div class="item__text">
+                                <span>MongoDB</span>
+                                <span class="w-40">40%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-40"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-65 margin-l">
+                            <div class="item__text">
+                                <span>GitHub</span>
+                                <span class="w-65">65%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-65"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-25 margin-r">
+                            <div class="item__text">
+                                <span>Heroku</span>
+                                <span class="w-25">25%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-25"></div>
+                            </div>
+                        </li>
+
                     </ul>
 
                 </section>
@@ -164,14 +257,78 @@
 
                     <h3 class="title-three">Graphic Design & Visual Effects</h3>
                     
-                    <ul>
-                        <li>Adobe Phtoshop</li>
-                        <li>Adobe Illustrator</li>
-                        <li>Adobe Premiere</li>
-                        <li>Adobe Affter Effects</li>
-                        <li>Sony Vegas Pro</li>
-                        <li>Krita</li>
-                        <li>Blender</li>
+                    <ul class="skills-list">
+
+                        <li class="skills__item w-80 margin-r">
+                            <div class="item__text">
+                                <span>Adobe Phtoshop</span>
+                                <span class="w-80">80%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-80"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-80 margin-l">
+                            <div class="item__text">
+                                <span>Adobe Illustrator</span>
+                                <span class="w-80">80%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-80"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-70 margin-r">
+                            <div class="item__text">
+                                <span>Adobe Premiere</span>
+                                <span class="w-70">70%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-70"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-70 margin-l">
+                            <div class="item__text">
+                                <span>Adobe Affter Effects</span>
+                                <span class="w-70">70%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-70"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-80 margin-r">
+                            <div class="item__text">
+                                <span>Sony Vegas Pro</span>
+                                <span class="w-80">80%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-80"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-75 margin-l">
+                            <div class="item__text">
+                                <span>Krita</span>
+                                <span class="w-75">75%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-75"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills__item w-60 margin-r">
+                            <div class="item__text">
+                                <span>Blender</span>
+                                <span class="w-60">60%</span>
+                            </div>
+                            <div class="item__progress">
+                                <div class="progress-bar w-60"></div>
+                            </div>
+                        </li>
+
                     </ul>
 
                 </section>

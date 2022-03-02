@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap');
 
+/***************** VARIABLES *****************/
+
 :root {
 	--ds-color-1-hex: #202225;				/*  Darkest	*/
 	--ds-color-2-hex: #292b2f;				/*  Dark	*/
@@ -21,6 +23,8 @@
 	--text-pink-400: rgba(244, 114, 182, 1);
 }
 
+/***************** GENERAL STUFF *****************/
+
 *, *::before, *::after {
 	margin: 0;
 	padding: 0;
@@ -39,6 +43,42 @@ body {
 a {
 	color: var(--a-hover-color-1);
 	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.title-one {
+	font-weight: 900;
+	font-size: 3.75rem;
+	line-height: 3.5rem;
+	padding-bottom: 1rem;
+}
+
+.title-two {
+	color: var(--text-gray-300);
+	font-size: 2rem;
+	letter-spacing: 0.15rem;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	margin: 4.5rem 0 8rem 0;
+}
+
+.title-three {
+	letter-spacing: 0.1rem;
+
+	padding-bottom: 0.75rem;
+}
+
+.title-margin {
+	margin-top: 3rem;
+}
+
+.text {
+	color: var(--text-gray-300);
 }
 
 /***************** NAVIGATION *****************/
@@ -120,39 +160,6 @@ a {
 .about, .projects, .skills, .contact {
 	padding: 3rem 10%;
 	/* margin: 3rem auto; */
-}
-
-/***************** GENERAL STUFF *****************/
-
-.title-one {
-	font-weight: 900;
-	font-size: 3.75rem;
-	line-height: 3.5rem;
-	padding-bottom: 1rem;
-}
-
-.title-two {
-	font-size: 2rem;
-	letter-spacing: 0.15rem;
-
-	text-align: center;
-	text-transform: uppercase;
-
-	margin: 4.5rem 0 8rem 0;
-}
-
-.title-three {
-	letter-spacing: 0.1rem;
-
-	padding-bottom: 0.75rem;
-}
-
-.title-margin {
-	margin-top: 3rem;
-}
-
-.text {
-	color: var(--text-gray-300);
 }
 
 /***************** HOME *****************/
@@ -258,6 +265,118 @@ a {
 
 	width: 75%;
 	margin-bottom: 0.75rem;
+}
+
+/***************** SKILLS *****************/
+
+@media screen and (min-width: 500px) {
+	.skills-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		/* grid-gap: 2rem; */
+	}
+
+	.skills__item {
+		margin-bottom: 1.5rem;
+	}
+
+	.skills__item.margin-r {
+		margin-right: 2rem;
+	}
+
+	.skills__item.margin-l {
+		margin-left: 2rem;
+	}
+}
+
+.skills-list .item__text {
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+}
+
+.skills-list .item__text span:last-child {
+	position: absolute;
+}
+
+.skills-list .item__text .w-20 {
+	margin-left: 15%;
+}
+
+.skills-list .item__text .w-25 {
+	margin-left: 20%;
+}
+
+.skills-list .item__text .w-40 {
+	margin-left: 35%;
+}
+
+.skills-list .item__text .w-60 {
+	margin-left: 55%;
+}
+
+.skills-list .item__text .w-65 {
+	margin-left: 60%;
+}
+
+.skills-list .item__text .w-70 {
+	margin-left: 65%;
+}
+
+.skills-list .item__text .w-75 {
+	margin-left: 70%;
+}
+
+.skills-list .item__text .w-80 {
+	margin-left: 75%;
+}
+
+.item__progress {
+	margin: 0.5rem 0;
+	border-radius: 10px;
+	height: 1rem;
+	width: 100%;
+	background-color: var(--ds-color-2-hex);
+	overflow: hidden;
+}
+
+.item__progress .progress-bar {
+	background: var(--ds-blurple-hex);
+	height: 100%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.item__progress .progress-bar.w-20 {
+	width: 20%;
+}
+
+.item__progress .progress-bar.w-25 {
+	width: 25%;
+}
+
+.item__progress .progress-bar.w-40 {
+	width: 40%;
+}
+
+.item__progress .progress-bar.w-60 {
+	width: 60%;
+}
+
+.item__progress .progress-bar.w-65 {
+	width: 65%;
+}
+
+.item__progress .progress-bar.w-70 {
+	width: 70%;
+}
+
+.item__progress .progress-bar.w-75 {
+	width: 75%;
+}
+
+.item__progress .progress-bar.w-80 {
+	width: 80%;
 }
 
 /***************** PROJECTS *****************/
