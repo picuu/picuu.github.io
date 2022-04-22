@@ -276,9 +276,15 @@ ul {
 
 	/* border-bottom: 0.25px solid rgba(209, 213, 219, .1); */
 
-	padding-bottom: 0.5rem;
-	margin-bottom: 1rem;
+	padding: 0;
 	margin-top: 2rem;
+}
+
+.skills-list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 2.5rem;
 }
 
 .skills-grid {
@@ -287,17 +293,24 @@ ul {
 	/* border: 1px solid rgba(209, 213, 219, .1); */
 	border-radius: 0.75rem;
 	/* box-shadow: 0 1px 6px rgba(0, 0, 0, .15); */
+
+	flex-basis: 12%;
+	flex-grow: 0;
+
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	/* height: 16rem; */
 	
-	padding: 1rem;
+	padding: 2rem 2rem;
 }
 
-@media screen and (min-width: 500px) {
-	.skills-list {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 2rem;
-	}
-}
+/* @media screen and (min-width: 500px) {
+} */
 
 
 /***************** PROJECTS *****************/
