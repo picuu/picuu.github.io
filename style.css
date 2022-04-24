@@ -61,7 +61,7 @@
 }
 
 body {
-	background-image: url("assets/portada/bg-portada.svg");
+	background-image: url("assets/portada/bg.svg");
 	background-repeat: no-repeat;
 	background-color: var(--bg-color-2);
 	color: var(--txt-color);
@@ -194,18 +194,13 @@ ul {
 /***************** HOME *****************/
 
 .home {
-	padding: 12rem 17.5% 6rem 17.5%;
+	margin: 14rem 2% 0rem 17.5%;
 	display: flex;
 	justify-content: space-between;
 }
 
 .home-texts {
 	z-index: 1;
-}
-
-.home-img img{
-	transform-origin: 50% 50%;
-	transform: scale(1.4, 1.4);
 }
 
 .greeting {
@@ -263,7 +258,7 @@ span.name {
 }
 
 .rrss {
-	margin-top: 10rem;
+	margin-top: 9rem;
 	display: flex;
 	gap: 4rem;
 	align-items: flex-end;	
@@ -272,6 +267,52 @@ span.name {
 .rrss-logo {
 	fill: var(--bg-color-4);
 }
+
+.home-img .circle {
+	position: relative;
+	object-fit: scale-down;
+}
+
+.home-img .circle.one {
+	top: 40%;
+	right: 200%;
+}
+
+.home-img .circle.two {
+	top: 5%;
+	right: 170%;
+}
+
+.home-img .circle.three {
+	top: 14%;
+	right: 136%;
+}
+
+.home-img .circle.four {
+	top: -20%;
+	right: 75%;
+}
+
+.home-img .circle.five {
+	top: 2%;
+	right: 74%;
+}
+
+.home-img .circle.six {
+	top: -34%;
+	right: 23%;
+}
+
+.home-img .circle.seven {
+	top: -83%;
+	right: 50%;
+}
+
+.home-img .circle.eight {
+	top: -85%;
+	right: -10%;
+}
+
 
 /***************** ABOUT *****************/
 
