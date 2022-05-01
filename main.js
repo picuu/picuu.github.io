@@ -62,3 +62,13 @@ let swiper = new Swiper(".projects__container", {
         clickable: true,
     },
 });
+
+/*==================== SHOW SCROLL TOP ====================*/
+function showScrollUp() {
+    const scrollUp = document.getElementById("scroll-up");
+
+    if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+    else scrollUp.classList.remove("show-scroll");
+}
+
+window.addEventListener("scroll", showScrollUp);
